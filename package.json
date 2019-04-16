@@ -12,7 +12,7 @@
     "dev": "webpack-dev-server --config ./build/webpack.config.js --hot --inline --open --mode development",
     "scss:build": "node-sass --include-path resources/scss --output-style compressed resources/scss/ -o dist/css/",
     "scss:watch": "node-sass --include-path resources/scss/ --output-style compressed --watch resources/scss/ -o dist/css/",
-    "start": "npm-run-all -l -p json-server assets html scss:build scss:watch dev"
+    "start": "npm-run-all -l -s scss:build -p json-server assets html scss:watch dev"
   },
   "keywords": [
     "Contact",
