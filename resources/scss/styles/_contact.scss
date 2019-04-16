@@ -1,0 +1,165 @@
+.modal {
+    &-backdrop {
+        &.show {
+            display: none;
+        }
+    }
+}
+
+.ds-modal {
+    & &__overlay {
+        background: $black;
+        opacity: 0.5;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+    }
+    .modal-header {
+        background: $container_background;
+        .modal-title {
+            font-size: 26px;
+            font-weight: bold;
+            color: $dark-blue;
+        }
+        .close{
+            font-size: 30px;
+        }
+    }
+    .modal-body {
+        .form-group {
+            label:before {
+                content: "*";
+            }
+        }
+    }
+    button.btn.btn-secondary.delete {
+        background: $btn_red;
+    }
+} 
+
+.ds-contact-details {
+    .back-btn {
+        position: fixed;
+        top: 8px;
+        left: 10px;
+        background: #075e79;
+        z-index: 12;
+        font-size: 25px;
+        border: 2px solid #18011d;
+        color: #bfeffd;
+        border-radius: 8px;
+        padding: 2px 13px;
+    }
+    .container {
+        overflow: auto;
+        .modal{
+            &.show{
+                display: block;
+            }
+        }
+    }
+    .card-container {
+        text-align: center;
+        .card {
+            margin: 15px;
+            display: inline-block;
+            border: 2px solid;
+            border-radius: 10px;
+            .card-body {
+                padding: 0px;
+                .card-title {
+                    padding: 10px 5px;
+                    display: flex;
+                    font-size: 30px;
+                    width: auto;
+                    background: $container_background;
+                    margin: 0;
+                }
+                .card-text {
+                    background: blue;
+                    color: white;
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+    & &__head {
+        font-size: 40px;
+        font-weight: bold;
+        color: $dark-blue;
+        margin-bottom: 50px;
+        text-align:center;
+        background: #bfeffd;
+    }
+
+    & &__heading {
+        font-size: 26px;
+        font-weight: bold;
+        color: $dark-blue;
+    }
+    & &__add {
+        text-align: right;
+        padding-right: 0;
+    }
+    table {
+        margin-top: 30px;
+    }
+    .glyphicon {
+        background-size: 100%;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        -webkit-appearance: none;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        margin-right: 8px;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .error {
+        font-size:12px;
+        color: red;
+        border-color: red;
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: $white;
+    }
+}
+
+.ds-contact-details{
+    &__head{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    &__heading {
+        display: flex;
+    }
+    .search-panel {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-left: 100px;
+        position: fixed;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        width: 85%;
+        z-index: 9;
+        background: white;
+        border-bottom: 2px solid $dark-blue;
+        align-items: center;
+    }
+    .card-container {
+        margin-top: 200px;
+    }
+}
+
+.w3-display-bottomleft:hover {
+    color: blue;
+    opacity: 1;
+}

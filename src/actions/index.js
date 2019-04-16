@@ -84,3 +84,4 @@ export {
     deleteContact,
     searchContact
 }
+
